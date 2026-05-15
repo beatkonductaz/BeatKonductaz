@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>BeatKonductaz | The Rich Flip</title>
+
+<meta name="description" content="BeatKonductaz presents The Rich Flip — A Little Richard Beat Battle & Art Experience in Macon, Georgia. Live beats, producer battles, immersive art, and Southern hip-hop culture." />
+
+<meta name="keywords" content="BeatKonductaz, The Rich Flip, beat battle, producer showcase, MPC battle, Macon Georgia events, Little Richard tribute, hip hop event, producer competition, boom bap, djOHLOW" />
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="BeatKonductaz Presents: The Rich Flip" />
+<meta property="og:description" content="A Little Richard Beat Battle & Art Experience in Macon, Georgia." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://beatkonductaz.com" />
+<meta property="og:image" content="https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png" />
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BeatKonductaz | The Rich Flip" />
+<meta name="twitter:description" content="Southern roots. Future beats. Cultural history." />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png" />
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --black:#050505;
+  --white:#f5f5f5;
+  --red:#d90404;
+  --gray:#9f9f9f;
+}
+
+body{
+  font-family:'Space Mono', monospace;
+  background:
+    linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.9)),
+    url('https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png');
+  background-size:cover;
+  background-position:center top;
+  background-attachment:fixed;
+  color:var(--white);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:80px 20px;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at top left, rgba(217,4,4,0.28), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.05), transparent 35%);
+  pointer-events:none;
+}
+
+.container{
+  width:100%;
+  max-width:760px;
+  position:relative;
+  z-index:2;
+}
+
+.flyer-card{
+  background:
+    linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.94)),
+    url('https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png');
+  background-size:cover;
+  background-position:center;
+  border:1px solid rgba(255,255,255,0.08);
+  padding:60px 40px;
+  position:relative;
+  overflow:hidden;
+  backdrop-filter:blur(4px);
+  box-shadow:
+    0 0 60px rgba(217,4,4,0.18),
+    0 0 140px rgba(0,0,0,0.8);
+}
+
+.flyer-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255,255,255,0.015) 3px
+    );
+  pointer-events:none;
+}
+
+/* HEADER */
+
+.kicker{
+  text-align:center;
+  font-size:12px;
+  letter-spacing:6px;
+  text-transform:uppercase;
+  color:var(--gray);
+  margin-bottom:18px;
+}
+
+.title{
+  text-align:center;
+  line-height:0.88;
+}
+
+.title-small{
+  display:block;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:72px;
+  color:white;
+  letter-spacing:2px;
+}
+
+.title-main{
+  display:block;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:170px;
+  color:var(--red);
+  text-shadow:
+    0 0 20px rgba(217,4,4,0.4),
+    0 0 60px rgba(217,4,4,0.25);
+  letter-spacing:2px;
+}
+
+.title-script{
+  display:block;
+  font-family:'Playfair Display', serif;
+  font-style:italic;
+  font-size:92px;
+  color:white;
+  margin-top:-36px;
+  transform:rotate(-5deg);
+}
+
+.subtitle{
+  text-align:center;
+  margin-top:18px;
+  color:#cfcfcf;
+  font-size:15px;
+  line-height:1.8;
+  max-width:620px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* DATE BOX */
+
+.info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:50px;
+}
+
+.info-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:24px;
+  text-align:center;
+  backdrop-filter:blur(5px);
+}
+
+.info-label{
+  color:var(--red);
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:11px;
+  margin-bottom:10px;
+}
+
+.info-main{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:42px;
+  line-height:1;
+}
+
+.info-sub{
+  margin-top:8px;
+  color:#bbbbbb;
+  font-size:13px;
+}
+
+/* HOST */
+
+.host{
+  margin-top:50px;
+  text-align:center;
+}
+
+.host-label{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  color:var(--gray);
+  font-size:11px;
+}
+
+.host-name{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:52px;
+  color:var(--red);
+  letter-spacing:2px;
+  margin-top:8px;
+}
+
+/* FEATURES */
+
+.features{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.feature{
+  background:rgba(255,255,255,0.03);
+  border-left:3px solid var(--red);
+  padding:18px;
+}
+
+.feature h3{
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--red);
+  margin-bottom:8px;
+}
+
+.feature p{
+  font-size:14px;
+  line-height:1.7;
+  color:#d7d7d7;
+}
+
+/* CTA */
+
+.cta{
+  margin-top:60px;
+  text-align:center;
+}
+
+.cta-top{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:11px;
+  color:#ffffff9e;
+  margin-bottom:14px;
+}
+
+.cta-button{
+  display:inline-block;
+  text-decoration:none;
+  background:var(--red);
+  color:white;
+  padding:18px 34px;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:14px;
+  transition:0.3s;
+  box-shadow:
+    0 0 40px rgba(217,4,4,0.4),
+    0 10px 40px rgba(217,4,4,0.4);
+}
+
+.cta-button:hover{
+  transform:translateY(-4px) scale(1.02);
+}
+
+.cta-bottom{
+  margin-top:14px;
+  color:#c5c5c5;
+  font-size:12px;
+}
+
+/* ARTIST */
+
+.artist{
+  margin-top:60px;
+  text-align:center;
+}
+
+.artist-label{
+  text-transform:uppercase;
+  letter-spacing:5px;
+  font-size:11px;
+  color:var(--gray);
+}
+
+.artist-name{
+  font-family:'Playfair Display', serif;
+  font-size:42px;
+  color:var(--white);
+  margin-top:10px;
+}
+
+.artist-sub{
+  margin-top:10px;
+  color:#bcbcbc;
+  font-size:14px;
+}
+
+/* FOOTER */
+
+.footer{
+  margin-top:70px;
+  padding-top:30px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  text-align:center;
+}
+
+.footer-main{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:30px;
+  letter-spacing:3px;
+  color:white;
+}
+
+.footer-sub{
+  margin-top:10px;
+  color:var(--red);
+  font-style:italic;
+  font-size:15px;
+}
+
+.footer-site{
+  margin-top:18px;
+  color:#a9a9a9;
+  font-size:12px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .flyer-card{
+    padding:40px 24px;
+  }
+
+  .title-small{
+    font-size:52px;
+  }
+
+  .title-main{
+    font-size:110px;
+  }
+
+  .title-script{
+    font-size:62px;
+    margin-top:-20px;
+  }
+
+  .info-grid,
+  .features{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="flyer-card">
+
+<div class="kicker">
+BeatKonductaz Presents
+</div>
+
+<div class="title">
+  <span class="title-small">THE</span>
+  <span class="title-main">RICH</span>
+  <span class="title-script">Flip</span>
+</div>
+
+<div class="subtitle">
+A Little Richard Beat Battle & Art Experience where producers reinterpret the sound and spirit of Macon through live beat battles, immersive artwork, and Southern hip-hop culture.
+</div>
+
+<div class="info-grid">
+
+  <div class="info-card">
+    <div class="info-label">Date</div>
+    <div class="info-main">August 15</div>
+    <div class="info-sub">Saturday Evening</div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-label">Location</div>
+    <div class="info-main">Mill Hill</div>
+    <div class="info-sub">Art Center · Macon, Georgia</div>
+  </div>
+
+</div>
+
+<div class="host">
+  <div class="host-label">Hosted By</div>
+  <div class="host-name">djOHLOW</div>
+</div>
+
+<div class="features">
+
+  <div class="feature">
+    <h3>Beat Battle Competition</h3>
+    <p>
+      Live producer competition inspired by Southern music history and sample culture.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Live Producer Showcases</h3>
+    <p>
+      Featured beat sets and curated performances from underground producers.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Special Invited Guests</h3>
+    <p>
+      Community leaders, artists, and hip-hop contributors throughout the night.
+    </p>
+  </div>
+
+  <div class="feature">
+    <h3>Immersive Art Experience</h3>
+    <p>
+      Visual installations and live artwork integrated throughout the event.
+    </p>
+  </div>
+
+</div>
+
+<div class="artist">
+  <div class="artist-label">
+    Featuring Artwork & Installations By
+  </div>
+
+  <div class="artist-name">
+    Kevin Scene Lewis
+  </div>
+
+  <div class="artist-sub">
+    Live visual storytelling inspired by rhythm, culture, and legacy.
+  </div>
+</div>
+
+<div class="cta">
+
+  <div class="cta-top">
+    Limited Producer Slots Available
+  </div>
+
+  <a
+    class="cta-button"
+    href="https://cash.app/$BeatKonductaz"
+    target="_blank"
+  >
+    Pay Registration Fee & Secure Slot
+  </a>
+
+  <div class="cta-bottom">
+    Serious producers only · Registration confirmed after payment
+  </div>
+
+</div>
+
+<div class="footer">
+
+  <div class="footer-main">
+    BeatKonductaz
+  </div>
+
+  <div class="footer-sub">
+    Live Beats · Live Art · Cultural History
+  </div>
+
+  <div class="footer-site">
+    beatkonductaz.com
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
