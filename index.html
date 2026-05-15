@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeatKonductaz | The Rich Flip</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Mono:wght@400;700&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --black:#0b0b0d;
+  --white:#f5f5f5;
+  --red:#e10600;
+  --red-dark:#8b0000;
+  --gray:#bdbdbd;
+}
+
+body{
+  background:#0a0a0a;
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+  font-family:'Space Mono', monospace;
+}
+
+.flyer{
+  width:680px;
+  min-height:1020px;
+  background:var(--black);
+  color:var(--white);
+  border:1px solid rgba(255,255,255,0.08);
+  position:relative;
+  overflow:hidden;
+}
+
+/* subtle energy background */
+.flyer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(225,6,0,0.15), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.06), transparent 50%);
+  pointer-events:none;
+}
+
+.header{
+  text-align:center;
+  padding:40px 30px 10px;
+}
+
+.kicker{
+  font-size:10px;
+  letter-spacing:5px;
+  color:var(--gray);
+  text-transform:uppercase;
+}
+
+.title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:120px;
+  line-height:0.9;
+  margin-top:10px;
+}
+
+.title span{
+  display:block;
+}
+
+.title .accent{
+  color:var(--red);
+  text-shadow:0 0 30px rgba(225,6,0,0.25);
+}
+
+.subtitle{
+  margin-top:10px;
+  font-style:italic;
+  color:var(--gray);
+}
+
+.section{
+  padding:20px 40px;
+  text-align:center;
+}
+
+.badge{
+  display:inline-block;
+  border:1px solid var(--red);
+  color:var(--red);
+  padding:6px 14px;
+  font-size:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.info{
+  margin-top:10px;
+  font-size:14px;
+  color:var(--white);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  padding:20px 40px;
+}
+
+.card{
+  border:1px solid rgba(255,255,255,0.08);
+  padding:15px;
+  text-align:center;
+}
+
+.card h3{
+  color:var(--red);
+  font-size:12px;
+  letter-spacing:3px;
+  margin-bottom:8px;
+  text-transform:uppercase;
+}
+
+.card p{
+  font-size:14px;
+  color:var(--white);
+}
+
+.host{
+  text-align:center;
+  padding:10px 20px;
+  color:var(--gray);
+}
+
+.host strong{
+  color:var(--red);
+  font-size:20px;
+}
+
+.cta{
+  text-align:center;
+  padding:30px;
+}
+
+.button{
+  display:inline-block;
+  background:var(--red);
+  color:white;
+  padding:14px 26px;
+  text-decoration:none;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  border-radius:2px;
+  box-shadow:0 10px 30px rgba(225,6,0,0.25);
+}
+
+.button:hover{
+  transform:translateY(-2px);
+}
+
+.footer{
+  text-align:center;
+  padding:20px;
+  font-size:10px;
+  color:var(--gray);
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+</style></head><body><div class="flyer">  <div class="header">
+    <div class="kicker">BeatKonductaz Presents</div>
+    <div class="title">
+      <span>THE</span>
+      <span class="accent">RICH FLIP</span>
+    </div>
+    <div class="subtitle">From piano keys to MPC pads</div>
+  </div>  <div class="section">
+    <div class="badge">Beat Battle + Art Experience</div>
+    <div class="info">A curated producer showcase inspired by Little Richard's legacy</div>
+  </div>  <div class="grid">
+    <div class="card">
+      <h3>Date</h3>
+      <p>Aug 15 · Saturday</p>
+    </div>
+    <div class="card">
+      <h3>Location</h3>
+      <p>Mill Hill Art Center<br>Macon, GA</p>
+    </div>
+  </div>  <div class="host">
+    Hosted by <strong>djOHLOW</strong>
+  </div>  <div class="section">
+    <div class="badge">Featured Artist</div>
+    <div class="info">Kevin Scene Lewis — immersive installations throughout the venue</div>
+  </div>  <div class="cta">
+    <!-- BEST PRACTICE PAYMENT FLOW -->
+    <a class="button" href="https://cash.app/$YOURCASHTAG" target="_blank">
+      Secure Your Producer Slot
+    </a>
+  </div>  <div class="footer">
+    BeatKonductaz · Black / White / Red Edition · beatkonductaz.com
+  </div></div></body>
+</html>
