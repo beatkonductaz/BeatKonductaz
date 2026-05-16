@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BeatKonductaz | The Rich Flip</title>
+
+<meta name="description" content="BeatKonductaz presents The Rich Flip — A Little Richard Beat Battle & Art Experience in Macon, Georgia. Live beats, producer battles, immersive art, and Southern hip-hop culture.">
+
+<meta name="keywords" content="BeatKonductaz, The Rich Flip, beat battle, producer showcase, MPC battle, Macon Georgia events, Little Richard tribute, hip hop event, producer competition, boom bap, djOHLOW">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="BeatKonductaz Presents: The Rich Flip">
+<meta property="og:description" content="A Little Richard Beat Battle & Art Experience in Macon, Georgia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://beatkonductaz.com">
+
+<!-- IMPORTANT -->
+<!-- Replace this with YOUR actual hosted image URL -->
+<meta property="og:image" content="https://beatkonductaz.com/richflip-og.jpg">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BeatKonductaz | The Rich Flip">
+<meta name="twitter:description" content="Southern roots. Future beats. Cultural history.">
+<meta name="twitter:image" content="https://beatkonductaz.com/richflip-og.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --black:#060606;
+  --white:#f5f5f5;
+  --red:#cf1010;
+  --gold:#c89a4b;
+  --gray:#b0b0b0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Space Mono', monospace;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.86), rgba(0,0,0,0.93)),
+    url('https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:var(--white);
+  overflow-x:hidden;
+}
+
+/* GLOBAL */
+
+.section{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:80px 24px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:72px;
+  letter-spacing:3px;
+  color:var(--white);
+}
+
+.section-title p{
+  margin-top:10px;
+  color:var(--gray);
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:12px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:50px 20px;
+}
+
+.hero-card{
+
+  width:100%;
+  max-width:1000px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.92)),
+    url('https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png');
+
+  background-size:cover;
+  background-position:center;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  overflow:hidden;
+
+  box-shadow:
+    0 0 80px rgba(207,16,16,0.2),
+    0 0 160px rgba(0,0,0,0.8);
+
+  position:relative;
+}
+
+.hero-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(circle at top left, rgba(207,16,16,0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.05), transparent 40%);
+
+  pointer-events:none;
+}
+
+/* FULL FLYER IMAGE TOP */
+
+.full-flyer-top{
+  width:100%;
+  display:block;
+}
+
+.full-flyer-top img{
+  width:100%;
+  display:block;
+  object-fit:contain;
+}
+
+/* CONTENT */
+
+.content{
+  padding:70px 40px;
+}
+
+/* HEADINGS */
+
+.kicker{
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:7px;
+  font-size:12px;
+  color:var(--gold);
+}
+
+.main-title{
+  margin-top:20px;
+  text-align:center;
+  line-height:0.88;
+}
+
+.main-title .the{
+  display:block;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:70px;
+}
+
+.main-title .rich{
+  display:block;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:180px;
+  color:var(--red);
+
+  text-shadow:
+    0 0 30px rgba(207,16,16,0.45),
+    0 0 80px rgba(207,16,16,0.2);
+}
+
+.main-title .flip{
+  display:block;
+  font-family:'Playfair Display', serif;
+  font-size:100px;
+  transform:rotate(-5deg);
+  margin-top:-40px;
+}
+
+.subtitle{
+  max-width:760px;
+  margin:30px auto 0;
+  text-align:center;
+  line-height:1.9;
+  color:#d4d4d4;
+  font-size:15px;
+}
+
+/* INFO GRID */
+
+.info-grid{
+  margin-top:60px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+.info-box{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:30px;
+  text-align:center;
+  backdrop-filter:blur(5px);
+}
+
+.info-label{
+  color:var(--gold);
+  letter-spacing:4px;
+  text-transform:uppercase;
+  font-size:11px;
+}
+
+.info-main{
+  margin-top:14px;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:48px;
+}
+
+.info-sub{
+  margin-top:10px;
+  color:#bbbbbb;
+}
+
+/* HOST */
+
+.host{
+  margin-top:60px;
+  text-align:center;
+}
+
+.host-label{
+  text-transform:uppercase;
+  letter-spacing:5px;
+  font-size:11px;
+  color:var(--gray);
+}
+
+.host-name{
+  margin-top:10px;
+  font-family:'Bebas Neue', sans-serif;
+  font-size:58px;
+  color:var(--red);
+}
+
+/* FEATURES */
+
+.features{
+  margin-top:60px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.feature{
+  background:rgba(255,255,255,0.03);
+  border-left:3px solid var(--red);
+  padding:22px;
+}
+
+.feature h3{
+  color:var(--gold);
+  letter-spacing:3px;
+  font-size:11px;
+  text-transform:uppercase;
+}
+
+.feature p{
+  margin-top:10px;
+  line-height:1.8;
+  color:#d5d5d5;
+  font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+  margin-top:70px;
+  text-align:center;
+}
+
+.cta-top{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:11px;
+  color:#ffffff99;
+  margin-bottom:18px;
+}
+
+.cta-btn{
+  display:inline-block;
+
+  background:var(--red);
+  color:white;
+
+  text-decoration:none;
+
+  padding:22px 42px;
+
+  text-transform:uppercase;
+  letter-spacing:3px;
+
+  font-size:14px;
+  font-weight:bold;
+
+  transition:0.3s;
+
+  box-shadow:
+    0 0 40px rgba(207,16,16,0.4),
+    0 10px 40px rgba(207,16,16,0.4);
+}
+
+.cta-btn:hover{
+  transform:translateY(-4px) scale(1.03);
+}
+
+.cta-bottom{
+  margin-top:16px;
+  color:#d1d1d1;
+  font-size:12px;
+}
+
+/* VIDEOS */
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:24px;
+}
+
+.video-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  overflow:hidden;
+}
+
+.video-card iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  border:none;
+}
+
+/* SOCIAL LINKS */
+
+.social-links{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.social-links a{
+  text-decoration:none;
+  color:white;
+  border:1px solid rgba(255,255,255,0.15);
+  padding:12px 18px;
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  transition:0.3s;
+}
+
+.social-links a:hover{
+  background:var(--red);
+  border-color:var(--red);
+}
+
+/* FULL FLYER BOTTOM */
+
+.full-flyer-bottom{
+  margin-top:80px;
+}
+
+.full-flyer-bottom img{
+  width:100%;
+  display:block;
+}
+
+/* FOOTER */
+
+.footer{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.footer-main{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:40px;
+  letter-spacing:3px;
+}
+
+.footer-sub{
+  margin-top:12px;
+  color:var(--gold);
+  font-style:italic;
+}
+
+.footer-site{
+  margin-top:18px;
+  color:#b2b2b2;
+  letter-spacing:3px;
+  font-size:12px;
+  text-transform:uppercase;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .content{
+    padding:50px 24px;
+  }
+
+  .main-title .the{
+    font-size:52px;
+  }
+
+  .main-title .rich{
+    font-size:110px;
+  }
+
+  .main-title .flip{
+    font-size:64px;
+    margin-top:-14px;
+  }
+
+  .info-grid,
+  .features{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-card">
+
+<!-- FULL FLYER TOP -->
+<div class="full-flyer-top">
+<img src="https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png" alt="BeatKonductaz Rich Flip Flyer">
+</div>
+
+<div class="content">
+
+<div class="kicker">
+BeatKonductaz Presents
+</div>
+
+<div class="main-title">
+<span class="the">THE</span>
+<span class="rich">RICH</span>
+<span class="flip">Flip</span>
+</div>
+
+<div class="subtitle">
+A Little Richard Beat Battle & Art Experience where producers reinterpret the sound and spirit of Macon through live beat battles, immersive artwork, and Southern hip-hop culture.
+</div>
+
+<div class="info-grid">
+
+<div class="info-box">
+<div class="info-label">Date</div>
+<div class="info-main">August 15</div>
+<div class="info-sub">Saturday Evening</div>
+</div>
+
+<div class="info-box">
+<div class="info-label">Location</div>
+<div class="info-main">Mill Hill</div>
+<div class="info-sub">Art Center · Macon, Georgia</div>
+</div>
+
+</div>
+
+<div class="host">
+<div class="host-label">Hosted By</div>
+<div class="host-name">djOHLOW</div>
+</div>
+
+<div class="features">
+
+<div class="feature">
+<h3>Beat Battle Competition</h3>
+<p>
+Live producer competition inspired by Southern music history and sample culture.
+</p>
+</div>
+
+<div class="feature">
+<h3>Live Producer Showcases</h3>
+<p>
+Featured beat sets and curated performances from underground producers.
+</p>
+</div>
+
+<div class="feature">
+<h3>Special Invited Guests</h3>
+<p>
+Community leaders, artists, and hip-hop contributors throughout the night.
+</p>
+</div>
+
+<div class="feature">
+<h3>Immersive Art Experience</h3>
+<p>
+Visual installations and live artwork integrated throughout the event.
+</p>
+</div>
+
+</div>
+
+<div class="cta">
+
+<div class="cta-top">
+Limited Producer Slots Available
+</div>
+
+<a
+class="cta-btn"
+href="https://cash.app/$BeatKonductaz"
+target="_blank"
+>
+Pay Registration Fee & Secure Slot
+</a>
+
+<div class="cta-bottom">
+Registration confirmed after payment
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INSTAGRAM -->
+
+<section class="section">
+
+<div class="section-title">
+<h2>Instagram Highlights</h2>
+<p>@beatkonductaz</p>
+</div>
+
+<div class="social-links">
+
+<a href="https://www.instagram.com/reel/ClPjz18MbCw/?igsh=d2IwY2ppOXYzZjQ3" target="_blank">
+Watch Reel 1
+</a>
+
+<a href="https://www.instagram.com/reel/ClEmiYrJpA4/?igsh=bnN0N2NtZ2E1emxj" target="_blank">
+Watch Reel 2
+</a>
+
+<a href="https://www.instagram.com/reel/Ck_7_1rs2tp/?igsh=MWw4eWsxbzc5ZDh1NQ==" target="_blank">
+Watch Reel 3
+</a>
+
+</div>
+
+</section>
+
+<!-- YOUTUBE -->
+
+<section class="section">
+
+<div class="section-title">
+<h2>BeatKonductaz Videos</h2>
+<p>@beatkonductaz1</p>
+</div>
+
+<div class="video-grid">
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/HHfcAq-zlkI"
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/Zytjs5pQbxc"
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/F2ugwj3p0vE"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
+
+<!-- FULL FLYER BOTTOM -->
+<div class="full-flyer-bottom">
+
+<img
+src="https://raw.githubusercontent.com/beatkonductaz/BeatKonductaz/main/BeatKonductaz%20Producer%20Battle%20The%20Rich%20Flip.png"
+alt="BeatKonductaz Rich Flip Flyer">
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-main">
+BeatKonductaz
+</div>
+
+<div class="footer-sub">
+Live Beats · Live Art · Cultural History
+</div>
+
+<div class="footer-site">
+beatkonductaz.com
+</div>
+
+</footer>
+
+</body>
+</html>
